@@ -1,0 +1,1023 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="allegrodocs.css">
+   <title>allegro L-format</title>
+</head>
+
+<body>
+
+<h1><i>allegro</i> L-format for materials in Chinese</h1>
+ <p><i>latest revision: 15 Sep 2016</i></p>
+
+<h2>INTRODUCTION</h2>
+
+<p>
+	Below is a summary field list for <i>allegro</i> L-format which is used to catalogue Chinese books in the Bodleian Library. Further information on each field together with examples can be found by clicking on the field numbers. This account aims to describe how bibliographical data is entered into the format, not how it is derived or composed from the materials to be catalogued; in this is we follow the rules of description prescribed in the first chapter of AACR2, with only minor departures (made over twenty years ago but now vindicated by RDA) to accommodate the peculiarities of Chinese books or to simplify the cataloguing process. In those fields where information is to be expressed in ISBD format, we follow the rules set out in IFLA's <a target="_blank" href="http://archive.ifla.org/VII/s13/pubs/isbd_m0602.pdf"><i>ISBD(M): International Standard Bibliographic Description for Monographic Publications</i></a>.
+</p>
+
+<h2>FIELD LIST</h2>
+
+<table>
+
+	<tr>
+		<td width="60px"><b>*</b></td>
+		<td colspan="2">repeatable</td>
+	</tr>
+
+	<tr>
+		<td><b>|</b></td>
+		<td colspan="2">subfield (ASCII 124)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Subfields can be entered in any order, except for subfield <b>|9</b>, which always comes last.</td>
+	</tr>
+
+	<tr>
+		<td><b>_</b></td>
+		<td colspan="2">indicator (ASCII 95)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Indicators come at the end of the field, after all other data (including subfields) has been entered. The only one currently in use is <b>_j</b>, which indicates that the romanisation in subfield <b>|9</b> is Japanese.</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Record-related information</th>
+	</tr>
+
+    <tr>
+    	<td><a target="_blank" href="000.htm"><b>#000</b></a></td>
+	    <td colspan="2">record number</td>
+    </tr>
+
+	<tr>
+		<td></td>
+		<td width="36px"><b>|o</b></td>
+		<td>operator code</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0rr.htm"><b>#0rr</b></a></td>
+		<td colspan="2">latest record revision</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|o</b></td>
+		<td>operator code</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0rx.htm"><b>#0rx</b></a></td>
+		<td colspan="2">record link (contents)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0ry.htm"><b>#0ry</b></a></td>
+		<td colspan="2">record link (piece)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0rz.htm"><b>#0rz</b></a></td>
+		<td colspan="2">part of main record in which sub-record is contained (free text field)
+		</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Coded information</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0ca.htm"><b>#0ca</b></a></td>
+		<td colspan="2">date type, date 1, date 2</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0cc.htm"><b>#0cc</b></a></td>
+		<td colspan="2">country of publication</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|t*</b></td>
+		<td>language of text</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|o*</b></td>
+		<td>language of original</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|a*</b></td>
+		<td>language of abstract</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0cg.htm"><b>#0cg</b></a></td>
+		<td colspan="2">general and specific material designations</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0cm.htm"><b>#0cm</b></a></td>
+		<td colspan="2">miscellaneous codes</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0cp.htm"><b>#0cp</b></a></td>
+		<td colspan="2">printing process</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|f</b></td>
+		<td>font</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Standard numbers</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="100.htm"><b>#100*</b></a></td>
+		<td colspan="2">ISBN</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|v</b></td>
+		<td>volume</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="110.htm"><b>#110*</b></a></td>
+		<td colspan="2">ISSN</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|v</b></td>
+		<td>volume</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="130.htm"><b>#130*</b></a></td>
+		<td colspan="2">tongyi shuhao</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|v</b></td>
+		<td>volume</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="140.htm"><b>#140*</b></a></td>
+		<td colspan="2">tongyi kanhao</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|v</b></td>
+		<td>volume</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="150.htm"><b>#150*</b></a></td>
+		<td colspan="2">guonei daihao</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|v</b></td>
+		<td>volume</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="150.htm"><b>#160*</b></a></td>
+		<td colspan="2">guowai daihao</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|v</b></td>
+		<td>volume</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Title / statement of responsibility</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="200.htm"><b>#200*</b></a></td>
+		<td colspan="2">title = parallel title (ISBD punctuation)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="230.htm"><b>#230*</b></a></td>
+		<td colspan="2">added title</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="240.htm"><b>#240*</b></a></td>
+		<td colspan="2">uniform title</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="290.htm"><b>#290*</b></a></td>
+		<td colspan="2">statement of responsibility</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Authors</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="300.htm"><b>#300*</b></a></td>
+		<td colspan="2">(dynasty) personal author</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|d</b></td>
+		<td>dates</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="310.htm"><b>#310*</b></a></td>
+		<td colspan="2">(dynasty) corporate author</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|d</b></td>
+		<td>dates</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Multiple title / statement of responsibility groups</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="201.htm"><b>#201&amp;c</b></a></td>
+		<td colspan="2">Titles (or groups of titles) by different authors (or groups of authors).
+		</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#200</b> title - 1st title / author group</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#230</b> added title</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#290</b> statement of responsibility</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#300</b> author</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">...</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#201</b> title - 2nd title / author group</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#231</b> added title</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#291</b> statement of responsibility</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#301</b> author</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">...</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#202</b> title - 3rd title / author group</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#232</b> added title</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#292</b> statement of responsibility</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#302</b> author</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">...</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">and so on, up to a theoretical 10th title / author group (<b>#209&amp;c</b>).
+		</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Author authority</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="3AA.htm"><b>#3AA</b></a></td>
+		<td colspan="2">(dynasty) personal author authority</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|d</b></td>
+		<td>dates</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="3AA.htm"><b>#3AN</b></a></td>
+		<td colspan="2">notes</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="3AA.htm"><b>#3AR*</b></a></td>
+		<td colspan="2">reference</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|n</b></td>
+		<td>notes on reference</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="3CA.htm"><b>#3CA</b></a></td>
+		<td colspan="2">(dynasty) corporate author authority</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|d</b></td>
+		<td>dates</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="3CA.htm"><b>#3CN</b></a></td>
+		<td colspan="2">notes</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="3CA.htm"><b>#3CR</b></a></td>
+		<td colspan="2">reference</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|n</b></td>
+		<td>notes on reference</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Edition</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="400.htm"><b>#400</b></a></td>
+		<td colspan="2">edition statement / statement of responsibility</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="405.htm"><b>#405</b></a></td>
+		<td colspan="2">material specific details</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="409.htm"><b>#409</b></a></td>
+		<td colspan="2">old books edition statement</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="410.htm"><b>#410*</b></a></td>
+		<td colspan="2">place</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="420.htm"><b>#420*</b></a></td>
+		<td colspan="2">publisher</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|f</b></td>
+		<td>function of publisher</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="430.htm"><b>#430</b></a></td>
+		<td colspan="2">date</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="409.htm"><b>#440*</b></a></td>
+		<td colspan="2">added publisher (used only with <b>#409</b>)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|p</b></td>
+		<td>place</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|d</b></td>
+		<td>date</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation (of publisher)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="409.htm"><b>#446*</b></a></td>
+		<td colspan="2">added <i>congshu</i> title (used only with <b>#409</b>)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|d</b></td>
+		<td>date</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Multiple place : publisher groups</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="411.htm"><b>#411&amp;c</b></a></td>
+		<td colspan="2">There can be up to three place : publisher groups, which are handled as follows (cf. the title /statement of responsibility groups above):</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#410 : #420</b> first place : publisher group</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#411 : #421</b> second place : publisher group</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#412 : #413</b> third place : publisher group</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Physical description</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="470.htm"><b>#470</b></a></td>
+		<td colspan="2">physical description</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Series</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="500.htm"><b>#500</b></a></td>
+		<td colspan="2">series 1</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|n</b></td>
+		<td>number</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|s</b></td>
+		<td>statement of responsibility relating to series</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|i</b></td>
+		<td>ISSN of series</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="501.htm"><b>#501</b></a></td>
+		<td colspan="2">series 1. subseries 1</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|n</b></td>
+		<td>number</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|s</b></td>
+		<td>statement of responsibility relating to subseries</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|i</b></td>
+		<td>ISSN of subseries</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="501.htm"><b>#502</b></a></td>
+		<td colspan="2">series 1. subseries 2</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|n</b></td>
+		<td>number</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|s</b></td>
+		<td>statement of responsibility relating to subseries</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|i</b></td>
+		<td>ISSN of subseries</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Multiple series. subseries groups</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="510.htm"><b>#510&amp;c</b></a></td>
+		<td colspan="2">There can be three series/subseries groups tagged as follows, with the same possible subfields:</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#500</b> series 1</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#501</b> series 1. subseries 1</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#502</b> series 1. subseries 2</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#510</b> series 2</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#511</b> series 2. subseries 1</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#512</b> series 2. subseries 2</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#520</b> series 3</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#521</b> series 3. subseries 1</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2"><b>#522</b> series 3. subseries 2</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Notes</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="600.htm"><b>#600</b></a></td>
+		<td colspan="2">general</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="640.htm"><b>#640*</b></a></td>
+		<td colspan="2">publisher of original (used only with <b>#600</b>)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|p</b></td>
+		<td>place</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|d</b></td>
+		<td>date</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation (of publisher)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="640.htm"><b>#646*</b></td>
+		<td colspan="2">added <i>congshu</i> title (used only with <b>#600</b>, for partial reprints)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|d</b></td>
+		<td>date</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|9</b></td>
+		<td>romanisation</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Classification/subjects</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="700.htm"><b>#700</b></td>
+		<td colspan="2"><i>siku</i> classification number</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="704.htm"><b>#704*</b></td>
+		<td colspan="2">Harvard-Yenching classification number</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="785.htm"><b>#785*</b></td>
+		<td colspan="2">Bodleian Chinese thesaurus</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Classification authority</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="7SC.htm"><b>#7SC</b></a></td>
+		<td colspan="2"><i>siku</i> classification number</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="7SC.htm"><b>#7SD</b></a></td>
+		<td colspan="2"><i>siku</i> classification text</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="7SC.htm"><b>#7SN</b></a></td>
+		<td colspan="2"><i>siku</i> classification notes</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="7Sc.htm"><b>#7Sc</b></a></td>
+		<td colspan="2">dynasty number</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="7Sc.htm"><b>#7Sd</b></a></td>
+		<td colspan="2">dynasty name</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="7Sc.htm"><b>#7Se</b></a></td>
+		<td colspan="2">dynasty dates</td>
+	</tr>
+
+	<tr>
+	    <td><a target="_blank" href="7Sc.htm"><b>#7Sf</b></a></td>
+		<td colspan="2">succeeding dynasty</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="7Sc.htm"><b>#7Sn</b></a></td>
+		<td colspan="2">dynasty notes</td>
+	</tr>
+
+	<tr>
+		<th colspan="3">Shelfmarks</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#800*</b></a></td>
+		<td colspan="2">BOD (Bodleian Library)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|c</b></td>
+		<td>copy note</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|g</b></td>
+		<td>specimen page filenames</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|h</b></td>
+		<td>periodical holdings</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|i</b></td>
+		<td>digitisation ID</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|p</b></td>
+		<td>provenance (old books)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|s</b></td>
+		<td>source collection number (old books)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#802*</b></a></td>
+		<td colspan="2">EAL (Sackler Eastern Art Library)</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">This and the following shelfmark fields (to <b>#80R</b>) may all take the above listed subfields.</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#803*</b></a></td>
+		<td colspan="2">RSL (Radcliffe Science Library)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#806*</b></a></td>
+		<td colspan="2">CCL (China Centre Library)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#807*</b></a></td>
+		<td colspan="2">RHO (Rhodes House Library)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#809*</b></a></td>
+		<td colspan="2">IND (Indian Institute Library)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#80A*</b></a></td>
+		<td colspan="2">PSL (Plant Sciences Library)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#80L*</b></a></td>
+		<td colspan="2">ZEGI (Zoology, Alexander Library)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#80N*</b></a></td>
+		<td colspan="2">ASH (Ashmolean Museum)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#80P*</b></a></td>
+		<td colspan="2">WAD (Wadham College)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="800.htm"><b>#80R*</b></a></td>
+		<td colspan="2">REG (Regent's Park College)</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="80V.htm"><b>#80V*</b></a></td>
+		<td colspan="2">Van der Loon collection running number</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|c</b></td>
+		<td>copy note</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|v</b></td>
+		<td>all parts originally in the Van der Loon collection</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|o</b></td>
+		<td>parts kept by Oxford</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|x</b></td>
+		<td>parts disposed of</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="0ry.htm"><b>#899</b></a></td>
+		<td colspan="2">piece record</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|v</b></td>
+		<td>volume number or other content of piece</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b>|b</b></td>
+		<td>barcode</td>
+	</tr>
+
+    <tr>
+		<th colspan="3">Local fields</th>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="900.htm"><b>#900</b></a></td>
+		<td colspan="2">local coded information</td>
+	</tr>
+
+	<tr>
+		<td><a target="_blank" href="905.htm"><b>#905</b></a></td>
+		<td colspan="2">cataloguer's notes</td>
+	</tr>
+
+	<tr>
+		<td><b>#909</b></td>
+		<td colspan="2">Serica tag</td>
+	</tr>
+
+	<tr>
+		<td><b>#988</b></td>
+		<td colspan="2">supplier of current periodical</td>
+	</tr>
+
+</table>
+
+</body>
+</html>
