@@ -1,0 +1,74 @@
+
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:blue; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:none}
+a:active  {color:yellow; background-color:transparent; text-decoration:none}
+
+body{
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Verdana", sans-serif;
+    padding: 0 30px;
+    font-size: 12px;
+    margin-left: 2cm;
+    margin-top: 1cm;
+    width: 600px;
+}
+
+h1{
+    color: #ff0000;
+    font-size: 16px;
+    text-align: left;
+}
+
+h2{
+    color: #ff0000;
+    font-size: 12px;
+    text-align: left;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+}
+
+th{
+    height: 40px;
+    text-align: left;
+    color: #ff0000;
+    font-size: 14px;
+}
+
+td{
+    text-align: left;
+    vertical-align: top;
+}
+
+pre{
+    font-family: "Courier", monospace;
+    font-size: 12px;
+}
+
+p.eg{
+    font-family: "Courier", monospace;
+    font-size: 12px;
+}
+
+/* -----
+p.medium{
+    font-size: 14px;
+}
+
+p.padd{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+
+p.ex1{
+    padding-left: 15px;
+}
+p.ex2{
+    padding-left: 30px;
+}
+----- */
